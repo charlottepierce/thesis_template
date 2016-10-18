@@ -1,4 +1,9 @@
 *.aux
 *.bbl
 *.log
+*.toc
+*.blg
+*.lof
+*.lot
+Thesis.pdf
 .DS_Store
