@@ -1,0 +1,44 @@
+%!TEX root = Thesis.tex
+
+% Packages for thesis style/structure formatting
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{xspace}
+\usepackage[numbers, sort]{natbib}
+
+% Page layout
+\parindent 0pt
+\parskip 0.20in
+\numberwithin{equation}{section}
+\renewcommand{\bibname}{References}
+\renewcommand{\contentsname}{Contents}
+
+% Customise header to show chapter - see fancyhdr.pdf
+\pagestyle{fancy} % default ``plain''
+\fancyhf{} % clear all rules
+\rhead{} % default - chapter
+\lhead{\nouppercase{\textsc{\leftmark}}} % default - section
+\renewcommand{\headrulewidth}{0.4pt} % thin line
+%\renewcommand{\footrulewidth}{0.4pt} % thin line
+\makeatletter
+%\renewcommand{\chaptermark}[1]{\markboth{\textsc{\@chapapp} \thechapter: #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername \xspace \thechapter. #1}}{}}
+\cfoot{} % remove the page number in the middle of footer
+% \rfoot{\thepage}
+\fancyfoot[R]{\thepage}
+%\fancyhead[R]{\thepage}
+
+% Force page numbers to right at start of new chapter
+\fancypagestyle{plain}{\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\thepage}} % page number in centre
+
+\makeatother
+
+% Remove the Warning: \headheight is too small (12.0pt):
+\setlength{\headheight}{28pt}
+
+\usepackage{phdthesis}
+

@@ -1,0 +1,24 @@
+\documentclass[11pt,a4paper,twoside]{report}
+
+\include{preamble}
+
+\begin{document}
+
+\pagenumbering{roman}
+\onehalfspacing
+\include{Title}
+
+\pagenumbering{arabic} \setcounter{page}{1}
+
+\include{Introduction}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+\renewcommand{\thechapter}{A\arabic{chapter}}
+\include{appendix/AppendixOne}
+\include{appendix/AppendixTwo}
+
+
+\end{document}
