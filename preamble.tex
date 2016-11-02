@@ -7,6 +7,8 @@
 \usepackage{fancyhdr}
 \usepackage{xspace}
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
 \usepackage{tocloft}
 \usepackage[numbers, sort]{natbib}
 \usepackage[font=small, labelfont=bf, margin=20pt]{caption}
@@ -41,6 +43,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[R]{\thepage}} % page number in centre
+
+% Table formatting
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\arraystretch}{1.2} % more space between table rows
+\setlength{\tabcolsep}{10pt} % more space between table columns
 
 \makeatother
 
